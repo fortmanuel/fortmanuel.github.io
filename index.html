@@ -2,48 +2,38 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Fort Manuel — Portfólio de Design Gráfico, Arquitetura, Interiores, Print e Social Media.">
-
+    <meta name="description" content="Fort Manuel — Portfólio de Design Gráfico, Arquitetura, Interiores, Print e Social Media.">
     <meta name="author" content="Fort Manuel">
 
-    <title>Fort Manuel — Design, Architecture & Creative Direction</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Fort Manuel — Creative Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================== -->
-
+    <!-- HEADER -->
     <header class="site-header">
 
-        <a href="#top" class="brand">
+        <a href="#top" class="logo">
             FORT<span>.</span>
         </a>
 
-        <nav class="main-nav">
-
+        <nav class="desktop-nav">
             <a href="#work">Projetos</a>
             <a href="#about">Sobre</a>
             <a href="#services">Serviços</a>
             <a href="#contact">Contacto</a>
-
         </nav>
 
-        <button class="menu-button" aria-label="Abrir menu">
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
             <span></span>
             <span></span>
         </button>
@@ -51,15 +41,23 @@
     </header>
 
 
+    <!-- MOBILE MENU -->
+    <nav class="mobile-nav">
+
+        <a href="#work">Projetos</a>
+        <a href="#about">Sobre</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contacto</a>
+
+    </nav>
+
+
     <main id="top">
 
-        <!-- =========================
-             HERO
-        ========================== -->
-
+        <!-- HERO -->
         <section class="hero">
 
-            <div class="hero-gradient"></div>
+            <div class="hero-glow"></div>
 
             <div class="hero-content">
 
@@ -68,22 +66,20 @@
                 </div>
 
                 <h1>
-                    I design
-                    <span>ideas</span>
-                    into
-                    experiences.
+                    Ideas into
+                    <span>experiences.</span>
                 </h1>
 
                 <div class="hero-bottom">
 
-                    <p class="hero-description">
+                    <p>
                         Portfólio multidisciplinar de design gráfico,
-                        arquitetura, interiores, print e gestão de
-                        comunicação para redes sociais.
+                        arquitetura, interiores, print e comunicação
+                        digital.
                     </p>
 
-                    <a href="#work" class="circle-link">
-                        <span>Explore</span>
+                    <a href="#work" class="explore-button">
+                        <span>Explorar</span>
                         <strong>↘</strong>
                     </a>
 
@@ -91,18 +87,15 @@
 
             </div>
 
-            <div class="hero-index">
-                01 / 06
+            <div class="hero-counter">
+                01 / 05
             </div>
 
         </section>
 
 
-        <!-- =========================
-             INTRO
-        ========================== -->
-
-        <section class="intro">
+        <!-- INTRO -->
+        <section class="intro section">
 
             <div class="section-label">
                 01 — INTRO
@@ -113,67 +106,66 @@
                 <h2>
                     Entre o
                     <em>design</em>,
-                    o espaço
-                    e a comunicação.
+                    o espaço e a
+                    comunicação.
                 </h2>
 
-                <p>
-                    O meu trabalho cruza diferentes áreas criativas.
-                    Desenvolvo identidades visuais, peças gráficas,
-                    ambientes, conceitos espaciais, materiais impressos
-                    e conteúdos digitais.
-                </p>
+                <div class="intro-copy">
 
-                <p>
-                    Cada projeto começa com uma ideia e termina numa
-                    solução pensada para funcionar no mundo real.
-                </p>
+                    <p>
+                        Desenvolvo projetos que cruzam diferentes
+                        disciplinas criativas — desde identidade visual
+                        e comunicação gráfica até arquitetura,
+                        interiores e experiências digitais.
+                    </p>
+
+                    <p>
+                        O objetivo é transformar ideias em soluções
+                        visualmente fortes, funcionais e coerentes.
+                    </p>
+
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- =========================
-             SELECTED WORK
-        ========================== -->
+        <!-- WORK -->
+        <section class="work section" id="work">
 
-        <section class="work" id="work">
-
-            <div class="section-header">
+            <div class="section-heading">
 
                 <div class="section-label">
                     02 — SELECTED WORK
                 </div>
 
-                <p>
-                    Projetos seleccionados
-                    <span>2023—2026</span>
-                </p>
+                <span>
+                    2023 — 2026
+                </span>
 
             </div>
 
 
             <!-- PROJECT 01 -->
+            <article class="project project-featured">
 
-            <article class="project project-large">
+                <a href="#" class="project-visual gradient-blue">
 
-                <a href="#" class="project-image gradient-blue">
-
-                    <div class="project-placeholder">
+                    <div class="visual-label">
                         PROJECT 01
                     </div>
 
-                    <span class="project-number">
+                    <span class="project-index">
                         01
                     </span>
 
                 </a>
 
-                <div class="project-info">
+                <div class="project-details">
 
                     <div>
-                        <span class="project-category">
+                        <span class="category">
                             GRAPHIC DESIGN
                         </span>
 
@@ -192,43 +184,39 @@
             </article>
 
 
-            <!-- PROJECT GRID -->
-
-            <div class="project-grid">
+            <!-- TWO PROJECTS -->
+            <div class="projects-grid">
 
                 <!-- PROJECT 02 -->
-
                 <article class="project">
 
-                    <a href="#" class="project-image gradient-purple">
+                    <a href="#" class="project-visual gradient-purple">
 
-                        <div class="project-placeholder">
+                        <div class="visual-label">
                             PROJECT 02
                         </div>
 
-                        <span class="project-number">
+                        <span class="project-index">
                             02
                         </span>
 
                     </a>
 
-                    <div class="project-info">
+                    <div class="project-details">
 
                         <div>
-
-                            <span class="project-category">
+                            <span class="category">
                                 ARCHITECTURE
                             </span>
 
                             <h3>
                                 Spatial Concept
                             </h3>
-
                         </div>
 
                         <p>
-                            Conceito e desenvolvimento
-                            espacial.
+                            Conceito, representação e
+                            desenvolvimento espacial.
                         </p>
 
                     </div>
@@ -237,38 +225,35 @@
 
 
                 <!-- PROJECT 03 -->
-
                 <article class="project">
 
-                    <a href="#" class="project-image gradient-green">
+                    <a href="#" class="project-visual gradient-green">
 
-                        <div class="project-placeholder">
+                        <div class="visual-label">
                             PROJECT 03
                         </div>
 
-                        <span class="project-number">
+                        <span class="project-index">
                             03
                         </span>
 
                     </a>
 
-                    <div class="project-info">
+                    <div class="project-details">
 
                         <div>
-
-                            <span class="project-category">
+                            <span class="category">
                                 INTERIOR DESIGN
                             </span>
 
                             <h3>
                                 Interior Experience
                             </h3>
-
                         </div>
 
                         <p>
-                            Interiores, materiais,
-                            composição e experiência.
+                            Ambientes, materiais, layouts
+                            e experiência espacial.
                         </p>
 
                     </div>
@@ -279,33 +264,30 @@
 
 
             <!-- PROJECT 04 -->
+            <article class="project project-featured">
 
-            <article class="project project-large">
+                <a href="#" class="project-visual gradient-yellow">
 
-                <a href="#" class="project-image gradient-yellow">
-
-                    <div class="project-placeholder">
+                    <div class="visual-label">
                         PROJECT 04
                     </div>
 
-                    <span class="project-number">
+                    <span class="project-index">
                         04
                     </span>
 
                 </a>
 
-                <div class="project-info">
+                <div class="project-details">
 
                     <div>
-
-                        <span class="project-category">
+                        <span class="category">
                             PRINT
                         </span>
 
                         <h3>
                             Print & Editorial
                         </h3>
-
                     </div>
 
                     <p>
@@ -319,35 +301,32 @@
 
 
             <!-- PROJECT 05 -->
-
-            <div class="project-grid">
+            <div class="projects-grid">
 
                 <article class="project">
 
-                    <a href="#" class="project-image gradient-multi">
+                    <a href="#" class="project-visual gradient-multi">
 
-                        <div class="project-placeholder">
+                        <div class="visual-label">
                             PROJECT 05
                         </div>
 
-                        <span class="project-number">
+                        <span class="project-index">
                             05
                         </span>
 
                     </a>
 
-                    <div class="project-info">
+                    <div class="project-details">
 
                         <div>
-
-                            <span class="project-category">
+                            <span class="category">
                                 SOCIAL MEDIA
                             </span>
 
                             <h3>
                                 Digital Direction
                             </h3>
-
                         </div>
 
                         <p>
@@ -360,28 +339,25 @@
                 </article>
 
 
-                <!-- PROJECT 06 -->
-
                 <article class="project">
 
-                    <a href="#" class="project-image gradient-blue-purple">
+                    <a href="#" class="project-visual gradient-blue-purple">
 
-                        <div class="project-placeholder">
+                        <div class="visual-label">
                             PROJECT 06
                         </div>
 
-                        <span class="project-number">
+                        <span class="project-index">
                             06
                         </span>
 
                     </a>
 
-                    <div class="project-info">
+                    <div class="project-details">
 
                         <div>
-
-                            <span class="project-category">
-                                CREATIVE
+                            <span class="category">
+                                CREATIVE DIRECTION
                             </span>
 
                             <h3>
@@ -391,8 +367,8 @@
                         </div>
 
                         <p>
-                            Conceito, imagem e direção
-                            criativa.
+                            Conceito, imagem, direção e
+                            desenvolvimento criativo.
                         </p>
 
                     </div>
@@ -404,11 +380,8 @@
         </section>
 
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
-
-        <section class="about" id="about">
+        <!-- ABOUT -->
+        <section class="about section" id="about">
 
             <div class="section-label">
                 03 — ABOUT
@@ -421,7 +394,7 @@
                     <em>multidisciplinar.</em>
                 </h2>
 
-                <div class="about-text">
+                <div class="about-copy">
 
                     <p>
                         Sou Fort Manuel, profissional criativo
@@ -430,10 +403,10 @@
                     </p>
 
                     <p>
-                        Acredito que boas soluções não precisam
-                        escolher entre estética e funcionalidade.
-                        Precisam encontrar o ponto onde ambas
-                        trabalham juntas.
+                        Trabalho na interseção entre estética,
+                        estratégia e execução, procurando criar
+                        soluções que sejam visualmente fortes
+                        sem perder a sua função.
                     </p>
 
                     <a href="#contact" class="text-link">
@@ -447,13 +420,10 @@
         </section>
 
 
-        <!-- =========================
-             SERVICES
-        ========================== -->
+        <!-- SERVICES -->
+        <section class="services section" id="services">
 
-        <section class="services" id="services">
-
-            <div class="section-header">
+            <div class="section-heading">
 
                 <div class="section-label">
                     04 — SERVICES
@@ -461,7 +431,7 @@
 
             </div>
 
-            <div class="services-list">
+            <div class="services-grid">
 
                 <div class="service">
                     <span>01</span>
@@ -494,7 +464,7 @@
                     <span>04</span>
                     <h3>Print</h3>
                     <p>
-                        Posters, brochuras, catálogos,
+                        Posters, catálogos, brochuras,
                         sinalética e materiais gráficos.
                     </p>
                 </div>
@@ -503,8 +473,8 @@
                     <span>05</span>
                     <h3>Social Media</h3>
                     <p>
-                        Estratégia visual, conteúdo,
-                        design e gestão digital.
+                        Conteúdo, design, estratégia visual
+                        e gestão de comunicação digital.
                     </p>
                 </div>
 
@@ -522,11 +492,8 @@
         </section>
 
 
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section class="contact" id="contact">
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
 
             <div class="section-label">
                 05 — CONTACT
@@ -539,26 +506,25 @@
                     <em>project?</em>
                 </h2>
 
-                <a href="mailto:hello@fortmanuel.com"
-                   class="contact-email">
-
+                <a
+                    href="mailto:hello@fortmanuel.com"
+                    class="contact-email"
+                >
                     hello@fortmanuel.com
-
                     <span>↗</span>
-
                 </a>
 
-                <div class="contact-links">
+                <div class="social-links">
 
-                    <a href="#">
+                    <a href="#" target="_blank">
                         Instagram ↗
                     </a>
 
-                    <a href="#">
+                    <a href="#" target="_blank">
                         LinkedIn ↗
                     </a>
 
-                    <a href="#">
+                    <a href="#" target="_blank">
                         Behance ↗
                     </a>
 
@@ -571,13 +537,10 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
+    <!-- FOOTER -->
     <footer class="footer">
 
-        <div class="footer-brand">
+        <div class="footer-logo">
             FORT<span>.</span>
         </div>
 

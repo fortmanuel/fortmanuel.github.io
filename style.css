@@ -43,14 +43,18 @@ button {
 }
 
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .site-header {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 82px;
+
     padding: 0 5vw;
 
     display: flex;
@@ -79,6 +83,7 @@ button {
 
     font-family: "DM Mono", monospace;
     font-size: 10px;
+
     text-transform: uppercase;
     letter-spacing: 0.08em;
 }
@@ -93,8 +98,10 @@ button {
 
 .menu-toggle {
     display: none;
+
     border: 0;
     background: none;
+
     cursor: pointer;
 }
 
@@ -103,10 +110,13 @@ button {
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
     position: relative;
+
     min-height: 100vh;
 
     padding: 150px 5vw 70px;
@@ -168,8 +178,10 @@ button {
 .hero-content {
     position: relative;
     z-index: 2;
+
     width: 100%;
     max-width: 1500px;
+
     margin: auto;
 }
 
@@ -185,8 +197,11 @@ button {
 .eyebrow,
 .section-label {
     font-size: 10px;
+
     letter-spacing: 0.12em;
+
     color: var(--gray);
+
     text-transform: uppercase;
 }
 
@@ -196,6 +211,7 @@ button {
     margin-top: 55px;
 
     font-size: clamp(65px, 10vw, 160px);
+
     line-height: 0.86;
 
     font-weight: 700;
@@ -207,6 +223,7 @@ button {
     display: block;
 
     font-family: Georgia, serif;
+
     font-style: italic;
     font-weight: 400;
 
@@ -264,6 +281,7 @@ button {
     height: 105px;
 
     border: 1px solid rgba(255, 255, 255, 0.4);
+
     border-radius: 50%;
 
     display: flex;
@@ -289,20 +307,25 @@ button {
 .explore-button:hover {
     background: var(--white);
     color: var(--black);
+
     transform: rotate(-8deg);
 }
 
 .hero-counter {
     position: absolute;
+
     right: 5vw;
     bottom: 35px;
 
     color: var(--gray);
+
     font-size: 9px;
 }
 
 
-/* SECTIONS */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 .section {
     border-top: 1px solid var(--line);
@@ -316,11 +339,15 @@ button {
 }
 
 
-/* INTRO */
+/* =========================
+   INTRO
+========================= */
 
 .intro {
     display: grid;
+
     grid-template-columns: 1fr 2fr;
+
     gap: 6vw;
 }
 
@@ -328,19 +355,23 @@ button {
     max-width: 950px;
 
     font-size: clamp(45px, 6.5vw, 95px);
+
     line-height: 0.95;
 
     letter-spacing: -0.065em;
+
     font-weight: 600;
 }
 
 .intro h2 em {
     font-family: Georgia, serif;
+
     font-weight: 400;
 }
 
 .intro-copy {
     max-width: 620px;
+
     margin-top: 65px;
 }
 
@@ -354,7 +385,9 @@ button {
 }
 
 
-/* WORK */
+/* =========================
+   WORK
+========================= */
 
 .work {
     padding: 120px 5vw 170px;
@@ -362,6 +395,7 @@ button {
 
 .section-heading {
     display: flex;
+
     justify-content: space-between;
     align-items: flex-end;
 
@@ -372,11 +406,26 @@ button {
     color: var(--gray);
 
     font-family: "DM Mono", monospace;
+
     font-size: 10px;
 }
 
 .project {
     margin-bottom: 110px;
+
+    opacity: 0;
+
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.project.visible {
+    opacity: 1;
+
+    transform: translateY(0);
 }
 
 .project-visual {
@@ -385,6 +434,7 @@ button {
     min-height: 560px;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
@@ -403,6 +453,7 @@ button {
 
 .visual-label {
     font-size: 10px;
+
     letter-spacing: 0.12em;
 
     opacity: 0.5;
@@ -415,8 +466,12 @@ button {
     right: 25px;
 
     font-family: "DM Mono", monospace;
+
     font-size: 10px;
 }
+
+
+/* PROJECT GRADIENTS */
 
 .gradient-blue {
     background:
@@ -518,6 +573,7 @@ button {
 
 .project-details {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 30px;
@@ -535,6 +591,7 @@ button {
     color: var(--gray);
 
     font-size: 9px;
+
     letter-spacing: 0.1em;
 
     margin-bottom: 12px;
@@ -542,6 +599,7 @@ button {
 
 .project-details h3 {
     font-size: 25px;
+
     letter-spacing: -0.05em;
 }
 
@@ -549,6 +607,7 @@ button {
     color: var(--gray);
 
     font-size: 12px;
+
     line-height: 1.6;
 }
 
@@ -557,6 +616,7 @@ button {
 
 .projects-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 4vw;
@@ -571,12 +631,15 @@ button {
 }
 
 
-/* ABOUT */
+/* =========================
+   ABOUT
+========================= */
 
 .about-content {
     margin-top: 80px;
 
     display: grid;
+
     grid-template-columns: 1.4fr 1fr;
 
     gap: 10vw;
@@ -584,6 +647,7 @@ button {
 
 .about h2 {
     font-size: clamp(50px, 7vw, 105px);
+
     line-height: 0.92;
 
     letter-spacing: -0.07em;
@@ -591,6 +655,7 @@ button {
 
 .about h2 em {
     font-family: Georgia, serif;
+
     font-weight: 400;
 }
 
@@ -615,12 +680,15 @@ button {
 }
 
 
-/* SERVICES */
+/* =========================
+   SERVICES
+========================= */
 
 .services-grid {
     margin-top: 80px;
 
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 }
 
@@ -636,6 +704,7 @@ button {
 
 .service span {
     color: var(--gray);
+
     font-size: 10px;
 }
 
@@ -643,6 +712,7 @@ button {
     margin-top: 60px;
 
     font-size: 36px;
+
     letter-spacing: -0.055em;
 }
 
@@ -654,11 +724,14 @@ button {
     color: var(--gray);
 
     font-size: 13px;
+
     line-height: 1.7;
 }
 
 
-/* CONTACT */
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
     min-height: 80vh;
@@ -670,6 +743,7 @@ button {
 
 .contact h2 {
     font-size: clamp(70px, 12vw, 180px);
+
     line-height: 0.82;
 
     letter-spacing: -0.09em;
@@ -677,11 +751,13 @@ button {
 
 .contact h2 em {
     font-family: Georgia, serif;
+
     font-weight: 400;
 }
 
 .contact-email {
     display: inline-flex;
+
     align-items: center;
 
     gap: 35px;
@@ -703,6 +779,7 @@ button {
 
 .social-links {
     display: flex;
+
     flex-wrap: wrap;
 
     gap: 30px;
@@ -715,7 +792,9 @@ button {
 }
 
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
     padding: 35px 5vw;
@@ -723,7 +802,9 @@ button {
     border-top: 1px solid var(--line);
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 30px;
@@ -737,13 +818,16 @@ button {
     color: white;
 
     font-size: 22px;
+
     font-weight: 800;
 
     letter-spacing: -0.08em;
 }
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 800px) {
 
@@ -791,11 +875,13 @@ button {
         z-index: 99;
 
         display: flex;
+
         flex-direction: column;
 
         gap: 25px;
 
         transform: translateY(-150%);
+
         transition: transform 0.4s ease;
     }
 
@@ -805,6 +891,7 @@ button {
 
     .mobile-nav a {
         font-size: 25px;
+
         letter-spacing: -0.04em;
     }
 
@@ -822,11 +909,13 @@ button {
 
     .hero h1 {
         font-size: clamp(58px, 17vw, 105px);
+
         margin-top: 40px;
     }
 
     .hero-bottom {
         flex-direction: column;
+
         align-items: flex-start;
 
         margin-top: 65px;
@@ -841,6 +930,7 @@ button {
 
     .intro {
         grid-template-columns: 1fr;
+
         gap: 60px;
     }
 
@@ -850,7 +940,9 @@ button {
 
     .section-heading {
         align-items: flex-start;
+
         flex-direction: column;
+
         gap: 18px;
     }
 
@@ -862,16 +954,19 @@ button {
 
     .projects-grid {
         grid-template-columns: 1fr;
+
         gap: 80px;
     }
 
     .project-details {
         grid-template-columns: 1fr;
+
         gap: 15px;
     }
 
     .about-content {
         grid-template-columns: 1fr;
+
         gap: 60px;
     }
 
@@ -885,17 +980,21 @@ button {
 
     .service h3 {
         font-size: 30px;
+
         margin-top: 45px;
     }
 
     .contact-email {
         gap: 15px;
+
         font-size: 19px;
+
         word-break: break-word;
     }
 
     .footer {
         flex-direction: column;
+
         align-items: flex-start;
     }
 }

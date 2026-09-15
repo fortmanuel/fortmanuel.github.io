@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
     const menuButton = document.querySelector(".menu-toggle");
     const mobileNav = document.querySelector(".mobile-nav");
     const mobileLinks = document.querySelectorAll(".mobile-nav a");
@@ -20,10 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /*
-     * Fecha o menu mobile depois
-     * de clicar numa secção.
-     */
+    /* =========================
+       CLOSE MOBILE MENU
+    ========================= */
 
     mobileLinks.forEach(link => {
 
@@ -32,10 +35,12 @@ document.addEventListener("DOMContentLoaded", () => {
             mobileNav.classList.remove("open");
 
             if (menuButton) {
+
                 menuButton.setAttribute(
                     "aria-expanded",
                     "false"
                 );
+
             }
 
         });
@@ -43,46 +48,55 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /*
-     * Pequeno efeito de aparecimento
-     * dos projetos quando entram no ecrã.
-     */
+    /* =========================
+       PROJECT REVEAL
+    ========================= */
 
     const projects = document.querySelectorAll(".project");
 
-    const observer = new IntersectionObserver(
-        (entries) => {
+    if ("IntersectionObserver" in window) {
 
-            entries.forEach(entry => {
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
 
-                if (entry.isIntersecting) {
+                entries.forEach(entry => {
 
-                    entry.target.classList.add("visible");
+                    if (entry.isIntersecting) {
 
-                    observer.unobserve(entry.target);
+                        entry.target.classList.add("visible");
 
-                }
+                        observer.unobserve(entry.target);
 
-            });
+                    }
 
-        },
-        {
-            threshold: 0.12
-        }
-    );
+                });
 
-
-    projects.forEach(project => {
-        observer.observe(project);
-    });
+            },
+            {
+                threshold: 0.12
+            }
+        );
 
 
-    /*
-     * Atualiza automaticamente o ano
-     * do footer.
-     */
+        projects.forEach(project => {
+            observer.observe(project);
+        });
 
-    const footerYear = document.querySelector(".footer p:last-child");
+    } else {
+
+        projects.forEach(project => {
+            project.classList.add("visible");
+        });
+
+    }
+
+
+    /* =========================
+       CURRENT YEAR
+    ========================= */
+
+    const footerYear =
+        document.querySelector(".copyright");
 
     if (footerYear) {
 
